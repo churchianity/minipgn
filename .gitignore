@@ -1,0 +1,10 @@
+# I often drop .pgn files in here to run tests
+*.pgn
+
+*.rdbg
+
+*.rdi
+*.obj
+*.pdb
+*.ilk
+*.exe
