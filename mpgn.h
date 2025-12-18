@@ -283,10 +283,18 @@ typedef struct {
     };
 } MPGN_Node;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int mpgn_parse(char **pgn, MPGN_Node *node, unsigned long long *line, unsigned long long *column);
 
 int mpgn_slice_eq (const MPGN_Slice s, const char *str);
 int mpgn_slice_eqn(const MPGN_Slice s, const char *str, long long int str_count);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // INCLUDE_GUARD_MINIPGN_H
 
